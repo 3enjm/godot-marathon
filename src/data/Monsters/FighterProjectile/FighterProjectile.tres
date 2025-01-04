@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="MonsterResource" load_steps=2 format=3 uid="uid://bnh40vf5yy3sp"]
+
+[ext_resource type="Script" path="res://src/data/classes/MonsterResource.gd" id="1_4jq7w"]
+
+[resource]
+script = ExtResource("1_4jq7w")
+name = "Fighter Projectile"
+variations = Array[Resource("res://src/data/classes/MonsterVariationResource.gd")]([])

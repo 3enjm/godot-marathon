@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="MonsterResource" load_steps=2 format=3 uid="uid://bdvpim8vsj8ix"]
+
+[ext_resource type="Script" path="res://src/data/classes/MonsterResource.gd" id="1_3qnwk"]
+
+[resource]
+script = ExtResource("1_3qnwk")
+name = "Trooper"
+variations = Array[Resource("res://src/data/classes/MonsterVariationResource.gd")]([])

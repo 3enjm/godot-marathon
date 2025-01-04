@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctsdogfpcaixy"]
+
+[ext_resource type="Script" path="res://src/gameworld/Actor.gd" id="1_qbqsa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iw70y"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"idle_angle_back",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle_angle_front",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle_back",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle_front",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle_side",
+"speed": 5.0
+}]
+
+[node name="Actor" type="Node3D"]
+script = ExtResource("1_qbqsa")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_iw70y")
+animation = &"idle_angle_back"
+
+[node name="DamageRegion" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DamageRegion"]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]

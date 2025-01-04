@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ProjectileResource" load_steps=2 format=3 uid="uid://dlmyi6n8r0w73"]
+
+[ext_resource type="Script" path="res://src/data/classes/ProjectileResource.gd" id="1_ajf6m"]
+
+[resource]
+script = ExtResource("1_ajf6m")
+damage = 15
+impact_type = 0
+can_bounce = false
+max_bounces = 0
+weight = 0.0
